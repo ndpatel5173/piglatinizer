@@ -3,25 +3,9 @@ $( "document" ).ready(function() { //this helps your jQuery to work. Write all o
 $("button").click(function(){
     let word = $(".input").val();
     var suffix = word.substring(0,1);
-        $("#button").click(function(){
-        $(".output").text(suffix + "ay");
-    });
+    var allbutthefirstcharacter = word.substring(1,word.length);
+        $(".output").text(allbutthefirstcharacter + suffix + "ay");
 console.log(word);
 console.log(suffix);
 });
-//console.log(typeof allButfirstCharacter + firstCharacter);
-//function firstCharacter(string){
-  //var suffix = string.substring(0,1);
-  //$("#button").click(function(){
-    //  $(".output").text(suffix + "ay");
-  //});
- // return suffix + "ay";
-//}
-console.log(firstCharacter(suffix));
-
-//function allButfirstCharacter(string){
-  //var pig = string.substring(1,string.length);
-  //var pig = string.substring(1,Infinity);
-  //return pig;
-//}
 })

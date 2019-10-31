@@ -4,3 +4,7 @@
 body{
     background:pink;
 }
+.output{
+    margin: 5px;
+    padding: 10px;
+}
